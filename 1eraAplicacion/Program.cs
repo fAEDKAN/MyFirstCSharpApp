@@ -6,12 +6,17 @@ namespace _1eraAplicacion
     {
         static void Main(string[] args)
         {
-            int edad = 29;
 
-            // Mostrar mensaje en consola
-            Console.WriteLine($"Tienes una edad de {++edad} años");
-            // Agregando el operador (++) como sufijo, hacemos que se incremente en 1 el valor de la variable
-            // Si lo aplicamos al final no tendrá efecto, ya que el código así como se ejecuta de arriba hacia abajo, también lo hace de izquierda a derecha
+            // Le pedimos al usuario que ingrese el 1er valor
+            Console.WriteLine("Introduce el primer número");
+            // Lo parseamos de texto a entero
+            int num1 = int.Parse(Console.ReadLine());
+            // Le pedimos al usuario que ingrese el 2do valor
+            Console.WriteLine("Introduce el segundo número");
+            // Lo parseamos de texto a entero
+            int num2 = int.Parse(Console.ReadLine());
+            // Realizamos la suma y mostramos el resultado
+            Console.WriteLine($"El resultado es {num1 + num2}");
 
             // Espera a que el usuario presione una tecla antes de cerrar la consola
             Console.ReadKey();

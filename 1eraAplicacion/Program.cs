@@ -6,11 +6,17 @@ namespace _1eraAplicacion
     {
         static void Main(string[] args)
         {
-            const int VALOR = 5;
+            const double PI = 3.1416;
 
-            const int VALOR2 = 7;
+            Console.WriteLine("Introducí la medida del radio:");
 
-            Console.WriteLine("El valor de la constante es: {1}", VALOR, VALOR2);
+            double radio = double.Parse(Console.ReadLine());
+
+            // double area = radio * radio * PI;
+
+            double area = Math.Pow(radio, 2) * PI;
+
+            Console.WriteLine($"El área del círculo es: {area}");
 
             // Espera a que el usuario presione una tecla antes de cerrar la consola
             Console.ReadKey();
